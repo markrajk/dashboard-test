@@ -1,0 +1,813 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Teams | Main View</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link">
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item active">
+                        <a href="../people-average-charts/" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-user"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <a href="../create-new-team/index.html">
+                        <i class="icon-plus-circle"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="#" class="sidebar-menu-footer-create-new">Compare teams</a>
+                    <a href="#" class="button button-mobile">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left">
+                        <!-- <h1 class="header-top-left-title text-truncate">Team Marketing</h1>
+                        <p class="header-top-left-small text-truncate">
+                            We make great ads, campaigns and create a super brand.
+                        </p> -->
+                        <div class="people-average-charts-header-info text-truncate">
+                            <img src="../public/img/p-05.png" alt="User's profile image">
+                            <p class="name text-truncate">Julia Martinez <span 
+                                class="team">Team marketing</span></p>
+                        </div>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+    
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+                                
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a 
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Join team</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Give rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+    
+                        <div class="dropdown-custom user-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html" class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html" class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="../sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom d-none">
+                    <div class="choose">
+                        <a href="../teams-average-charts/index.html">
+                            Charts
+                        </a>
+
+                        <a href="../teams-members/index.html" class="active">
+                            Members
+                        </a>
+
+                        <a href="../teams-comments/index.html">
+                            Comments
+                        </a>
+
+                        <a href="../teams-settings-general/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../report-team/index.html">
+                            Reports
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+
+            <main class="people-average-charts">
+                <div class="people-average-charts-header">
+                    <!-- <div class="people-average-charts-header-info">
+                        <img src="../public/img/p-05.png" alt="User's profile image">
+                        <p class="name text-truncate">Juulia Martinez <span
+                                class="email">julia.martinez@gmail.com</span></p>
+                    </div> -->
+
+                    <div class="people-average-charts-header-info-buttons">
+                        <a href="../people-average-charts/index.html" class="button button-dark">Average charts</a>
+                        <a href="../people-feedback-received/index.html" class="button button-outlined">Received
+                            feedback</a>
+                        <a href="../people-feedback-given/index.html" class="button button-outlined">Given feedback</a>
+                    </div>
+                </div>
+
+                <div class="people-average-charts-body">
+
+                    <section class="section section-averages">
+                        <div class="section-header">
+                            <p>Two week averages</p>
+                        </div>
+                        <div class="section-body">
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Attitude</p>
+                                <div class="progress-custom-info">
+                                    <h3>Great</h3>
+                                    <p class="up">
+                                        <i class="icon-arrow-circle-up"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill good" fill-progress="70"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Productivity</p>
+                                <div class="progress-custom-info">
+                                    <h3>Great</h3>
+                                    <p class="up">
+                                        <i class="icon-arrow-circle-up"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill ok" fill-progress="60"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Teamworking</p>
+                                <div class="progress-custom-info">
+                                    <h3>Ok</h3>
+                                    <p class="down">
+                                        <i class="icon-arrow-circle-down"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill ok" fill-progress="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section section-development">
+                        <div class="section-header">
+                          <p>Longterm development</p>
+                          <div class="dropdown-custom">
+                            <a href="#" class="dropdown-custom-trigger">
+                              Months
+                              <i class="icon-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                              <li class="dropdown-custom-list-item">
+                                <a href="#" class="dropdown-custom-list-item-link"
+                                  >Weeks</a
+                                >
+                              </li>
+          
+                              <li class="dropdown-custom-list-item">
+                                <a href="#" class="dropdown-custom-list-item-link"
+                                  >Months</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="section-body">
+                            <div class="section-body-chart">
+                                <div class="section-body-chart-header">
+                                    <div class="options">
+                                        <a href="#">Weeks</a>
+                                        <span>|</span>
+                                        <a href="#" class="active">Months</a>
+                                    </div>
+                                </div>
+                                <div class="section-body-chart-main">
+                                  <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+          
+                            <div class="section-body-legend">
+                                <div class="section-body-legend-header">
+                                    <p>Select data to graph</p>
+                                </div>
+                                <div class="section-body-legend-main">
+                                  <div id="chart-legends"></div>
+                                  <div class="section-body-legend-main-share">
+                                      <a href="#">Export graph as PDF</a>
+                                      <a href="#">Share graph</a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </section>
+
+                    <!-- <section class="section section-development slider">
+                        <div class="section-header">
+                            <p>Longterm development</p>
+                            <div class="dropdown-custom">
+                                <a href="#" class="dropdown-custom-trigger">
+                                    Months
+                                    <i class="icon-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-custom-list">
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Weeks</a>
+                                    </li>
+
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Months</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-body">
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Average feedback</h4>
+                                    <h3 class="text-truncate">Attitude</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Average feedback</h4>
+                                    <h3 class="text-truncate">Productivity</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Amount of given</h4>
+                                    <h3 class="text-truncate">Teamworking</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-trigger slider-trigger-left">
+                            <i class="icon-chevron-left"></i>
+                        </div>
+
+                        <div class="slider-trigger slider-trigger-right">
+                            <i class="icon-chevron-right"></i>
+                        </div>
+                    </section> -->
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+    <script>
+       
+
+        // CHART & NUMBER OF BARS
+        function numberOfChartBars() {
+            var graphs = document.querySelectorAll('.graph-card');
+
+            for(var i = 0; i < graphs.length; i++) {
+                console.log(i);
+                var rem = parseInt(getComputedStyle(document.documentElement).fontSize);
+                var graphWidth = graphs[i].offsetWidth;
+                var barWidth = rem * 1.8 * 3;
+                var numOfBars = Math.floor(graphWidth / (barWidth));
+
+                var bars = graphs[i].querySelectorAll('.graph-card-body .bar');
+
+                for(var j = 0; j < bars.length; j++) {
+                    bars[j].style.display = 'none';
+                    if (j + 1 >= bars.length - numOfBars) {
+                        bars[j].style.display = 'inline-block';
+                    }
+                }
+
+            }
+
+        }
+
+        numberOfChartBars();
+
+        // ANIMATE PROGRESS BAR
+        window.addEventListener('load', function () {
+            var progressBars = document.querySelectorAll('.progress-custom-bar-fill');
+
+            for(var i = 0; i < progressBars.length; i++) {
+                progressBars[i].style.width = progressBars[i].getAttribute('fill-progress') + '%';
+            }
+        })
+
+        // initial width check
+        checkSliderWidth()
+
+        // Initialize sliders
+        sliderInit('.section-averages')
+        sliderInit('.section-development')
+
+
+        // Check for sliders and content width show/hide slider triggers
+        function checkSliderWidth(slider) {
+            $('.slider').each(function (i) {
+                if ($(this).width() <= $(this).find('.slider-item').outerWidth() * 3 - 10) {
+                    $(this).find('.slider-trigger-left').show()
+                    $(this).find('.slider-trigger-right').show()
+                } else {
+                    $(this).find('.slider-trigger-left').hide()
+                    $(this).find('.slider-trigger-right').hide()
+                }
+            })
+
+            numberOfChartBars()
+        }
+
+        // Slider logic
+        function sliderInit(slider) {
+            $(slider + ' .slider-trigger-left').on('click', function () {
+                $(slider + ' .section-body').animate({
+                    scrollLeft: '-=' + ($(slider + ' .slider-item').outerWidth() + parseInt($('html').css('font-size')) * 1.72)
+                }, 300, 'swing');
+            });
+
+            $(slider + ' .slider-trigger-right').on('click', function () {
+                $(slider + ' .section-body').animate({
+                    scrollLeft: '+=' + ($(slider + ' .slider-item').outerWidth() + parseInt($('html').css('font-size')) * 1.72)
+                }, 300, 'swing');
+            });
+        }
+        // resize event listener
+        window.addEventListener('resize', checkSliderWidth)
+    </script>
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    let chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        datasets: [
+          {
+              // showLine: false,
+            label: 'Attitude',
+            data: [1.5, 2, 3, 3.5, 3, 3.8, 4, 3.5, 4],
+            //backgroundColor: 'rgba(0,0,0,0)'
+            fill: false,
+            borderColor: '#FF7F00',
+          },
+          {
+            label: 'Teamworking',
+            data: [1.2, 1.4, 2, 3, 4, 3.5, 3.5, 3, 3.5],
+            //backgroundColor: 'rgba(0,0,0,0)'
+            fill: false,
+            borderColor: '#1DA0F2',
+          },
+
+          {
+            label: 'Productivity',
+            data: [2, 3, 4, 2, 3, 4, 2, 4, 3],
+            //backgroundColor: 'rgba(0,0,0,0)'
+            fill: false,
+            borderColor: '#F21D1D',
+          },
+
+          {
+            label: 'Team lead',
+            data: [1, 2, 3, 3, 3, 4, 3, 2, 1],
+            //backgroundColor: 'rgba(0,0,0,0)'
+            fill: false,
+            borderColor: '#1AAA51',
+          },
+
+          {
+            label: 'Average',
+            data: [1, 3, 2, 4, 4, 4, 1, 2, 4],
+            //backgroundColor: 'rgba(0,0,0,0)'
+            fill: false,
+            borderColor: '#98E816',
+          },
+        ],
+        labels: [
+          'Jan',
+          'Feb',
+          'Mar',
+          'Apr',
+          'May',
+          'Jun',
+          'Jul',
+          'Aug',
+          'Sep',
+        ],
+      },
+      options: {
+          legend: {
+              display:false,
+             position: 'right',
+             align: 'center',
+             
+             labels: {
+              padding: 30
+             }
+          },
+        legendCallback: function (chart) {
+          return chart.data.datasets.map((e, i, arr) => {
+              return `
+              <div class="chart-label chart-label-${i}">
+                  <input type="checkbox">
+                  <p>${e.label}</p>
+                  <span style="background-color: ${e.borderColor}"></span>
+              </div>`
+          }).join('')
+        },
+        maintainAspectRatio: false,
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                  fontColor: '#5E636B',
+              fontFamily: 'Roboto, sans-serif',
+              fontSize: 13.5,
+                beginAtZero: false,
+                padding: 26,
+                max: 5,
+                min: 1,
+                stepSize: 1,
+              },
+              gridLines: {
+                drawTicks: false,
+                drawBorder: false,
+              },
+            },
+          ],
+          xAxes: [
+            {
+              ticks: {
+                  fontColor: '#5E636B',
+                  fontFamily: 'Roboto, sans-serif',
+                  fontSize: 12,
+                beginAtZero: false,
+                padding: 33,
+              },
+              gridLines: {
+                drawTicks: false,
+                drawBorder: false,
+                drawOnChartArea: false,
+              },
+            },
+          ],
+        },
+      },
+    });
+
+  //   function redraw() {
+  //     chart.data.datasets[0].hidden;
+  //     //chart.data.datasets[0].showLine = false;
+  //   }
+
+    document.getElementById('chart-legends').innerHTML = chart.generateLegend();
+  </script>
+
+</body>
+
+</html>

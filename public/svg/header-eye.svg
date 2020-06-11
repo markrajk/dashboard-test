@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.9" height="12.496" viewBox="0 0 19.9 12.496">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-eye" data-name="Icon feather-eye" transform="translate(-0.75 -5.25)">
+    <path id="Path_880" data-name="Path 880" class="cls-1" d="M1.5,11.5S4.845,6,10.7,6s9.2,5.5,9.2,5.5S16.555,17,10.7,17,1.5,11.5,1.5,11.5Z"/>
+    <path id="Path_881" data-name="Path 881" class="cls-1" d="M18.518,15.8a2.411,2.411,0,0,1-2.509,2.3A2.411,2.411,0,0,1,13.5,15.8a2.411,2.411,0,0,1,2.509-2.3A2.411,2.411,0,0,1,18.518,15.8Z" transform="translate(-5.309 -4.064)"/>
+  </g>
+</svg>

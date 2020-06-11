@@ -1,0 +1,528 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Teams | Comments</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link">
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item active">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../people-average-charts/" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-user"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar-main-item">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <a href="#"  data-toggle="modal" data-target="#createNewTeamModal01">
+                        <i class="icon-plus-circle"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="#" class="sidebar-menu-footer-create-new">Compare teams</a>
+                    <a href="#" class="button button-mobile">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left text-truncate">
+                        <h1 class="header-top-left-title text-truncate">Team Marketing</h1>
+                        <p class="header-top-left-small text-truncate">
+                            We make great ads, campaigns and create a super brand.
+                        </p>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+    
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+                                
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a 
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Join team</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Give rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+    
+                        <div class="dropdown-custom user-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html" class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html" class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="../sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="choose">
+                        <a href="../teams-average-charts/index.html">
+                            Charts
+                        </a>
+
+                        <a href="../teams-members/index.html">
+                            Members
+                        </a>
+
+                        <a href="../teams-comments/index.html" class="active">
+                            Comments
+                        </a>
+
+                        <a href="../teams-settings-general/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../report-team/index.html">
+                            Reports
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+
+            <main class="teams-comments">
+
+                <section class="section-comments">
+                    <div class="section-comments-header">
+                        <p class="text-truncate">
+                            Team members opinions, how we could improve.
+                        </p>
+
+                        <div class="dropdown-custom">
+                            <a href="#" class="dropdown-custom-trigger">
+                                Latest
+                                <i class="icon-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-item">
+                                    <a href="#" class="dropdown-custom-list-item-link">Latest</a>
+                                </li>
+
+                                <li class="dropdown-custom-list-item">
+                                    <a href="#" class="dropdown-custom-list-item-link">Last month</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-comments-body">
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="comment-header-img" src="../public/img/p-05.png" alt="User's profile image">
+                                <p class="comment-header-name">Maria Rodriguez</p>
+                                <p class="comment-header-date">24.5.2020</p>
+                            </div>
+                            <div class="comment-body">
+                                <p class="comment-body-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
+                                <i class="icon-close read-more close"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+        <script src="../public/js/jquery-3.4.1.min.js"></script>
+        <script src="../public/js/bootstrap.bundle.js"></script>
+        <script src="../public/js/main.js"></script>
+
+        <script>
+            // TRUNCATE COMMENTS
+            var commentsBody = document.querySelectorAll('.comment-body');
+            var commentsBodyText = document.querySelectorAll('.comment-body-text');
+            var readMoreLink = '<a href="#" class="read-more">Read more</a>';
+
+            for(var i = 0; i < commentsBody.length; i++) {
+                var commentsBodyText = commentsBody[i].querySelector('.comment-body-text');
+                var commentsBodyTextTrunc = 
+                        '<div class="comment-body-text-trunc">'
+                            +commentsBody[i].innerText.substr(0,70-1)+(commentsBody[i].innerText.length>70?'...'+readMoreLink:'')
+                        +'</div>';
+               
+                commentsBody[i].insertAdjacentHTML( 'beforeend', commentsBodyTextTrunc );
+                commentsBodyText.style.display = 'none';
+            }
+
+            var readMoreTriggers = document.querySelectorAll('.read-more');
+            for(var i = 0; i < readMoreTriggers.length; i++) {
+                readMoreTriggers[i].addEventListener('click', function(e) {
+                    var comment = e.target.parentElement.parentElement.parentElement;
+                    comment.classList.toggle('open');
+                })
+            }
+        </script>
+</body>
+
+</html>

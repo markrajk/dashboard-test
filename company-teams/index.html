@@ -1,0 +1,460 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Company | teams</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link">
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../people-average-charts/" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-user"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item active">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Companies</h2>
+                    <a href="../create-new-team/index.html">
+                        <i class="icon-plus-circle"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Example Company 1</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Example Company 2</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Example Company 3</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="#" class="sidebar-menu-footer-create-new" data-toggle="modal"
+                        data-target="#registerNewCompanyModal">Register a new company</a>
+                    <a href="#" class="button button-mobile">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left text-truncate">
+                        <h1 class="header-top-left-title text-truncate">Nokia Oyj</h1>
+                        <p class="header-top-left-small text-truncate">
+                            This an example description of an example company.
+                        </p>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+    
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+                                
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a 
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Join team</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Give rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+    
+                        <div class="dropdown-custom user-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html" class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html" class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="../sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="choose">
+                        <a href="../company-overview/index.html">
+                            Overview
+                        </a>
+                        
+                        <a href="../company-teams/index.html" class="active">
+                            Teams
+                        </a>
+
+                        <a href="../company-members/index.html">
+                            Employees
+                        </a>
+
+                        <a href="../company-admin/index.html">
+                            Rights
+                        </a>
+
+                        <a href="../company-settings/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../company-support/index.html">
+                            Support
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="company-teams">
+                <div class="company-teams-body">
+
+                    <p class="subheader-text">New requests (2)</p>
+                    <p class="subheader-text-small">Following teams have requested to connect with this company.</p>
+
+                    <table class="table-custom table-01">
+                        <thead class="table-custom-head">
+                            <tr>
+                                <td class="table-custom-col-01 ">Name</td>
+                                <td class="table-custom-col-02">Team lead</td>
+                                <td class="table-custom-col-03">Members</td>
+                                <td class="table-custom-col-04"></td>
+                            </tr>
+                        </thead>
+                        <tbody class="table-custom-body">
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Team Software</a>
+                                </td>
+                                <td class="table-custom-col-02">martin.billo@gmail.com</td>
+                                <td class="table-custom-col-03">32</td>
+                                <td class="table-custom-col-04">
+                                    <div class="choose">
+                                        <a href="#" class="confirm">Confirm</a>
+                                        <spna class="divider">I</spna>
+                                        <a href="#" class="deny">Deny</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Team Hardware</a>
+                                </td>
+                                <td class="table-custom-col-02">jörgen.vogel@gmail.com</td>
+                                <td class="table-custom-col-03">12</td>
+                                <td class="table-custom-col-04">
+                                    <div class="choose">
+                                        <a href="#" class="confirm">Confirm</a>
+                                        <spna class="divider">I</spna>
+                                        <a href="#" class="deny">Deny</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div class="section-caption">
+                        <div class="section-caption-info">
+                            <p class="subheader-text">Active teams (24)</p>
+                            <p class="subheader-text-small">Here you can view and manage all teams which are linked with
+                                this company.</p>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="icon-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+
+                    <table class="table-custom table-02">
+                        <thead class="table-custom-head">
+                            <tr>
+                                <td class="table-custom-col-01 ">Name</td>
+                                <td class="table-custom-col-02">Team lead</td>
+                                <td class="table-custom-col-03">Members</td>
+                                <td class="table-custom-col-04">
+                                    <div class="dropdown-custom">
+                                        <a href="#" class="dropdown-custom-trigger">
+                                            <i class="icon-list"></i>
+                                            <i class="icon-caret-down"></i>
+                                        </a>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Option 1</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Option 2</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Option 3</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Option 5</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="table-custom-body">
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Team Software</a>
+                                </td>
+                                <td class="table-custom-col-02">martin.billo@gmail.com</td>
+                                <td class="table-custom-col-03">32</td>
+                                <td class="table-custom-col-04">
+                                    <div class="dropdown-custom">
+                                        <a href="#" class="dropdown-custom-trigger">
+                                            <i class="icon-ellipsis"></i>
+                                        </a>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">View profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Team Hardware</a>
+                                </td>
+                                <td class="table-custom-col-02">jörgen.vogel@gmail.com</td>
+                                <td class="table-custom-col-03">12</td>
+                                <td class="table-custom-col-04">
+                                    <div class="dropdown-custom">
+                                        <a href="#" class="dropdown-custom-trigger">
+                                            <i class="icon-ellipsis"></i>
+                                        </a>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">View profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Team Product Development</a>
+                                </td>
+                                <td class="table-custom-col-02">jörgen.vogel@gmail.com</td>
+                                <td class="table-custom-col-03">12</td>
+                                <td class="table-custom-col-04">
+                                    <div class="dropdown-custom">
+                                        <a href="#" class="dropdown-custom-trigger">
+                                            <i class="icon-ellipsis"></i>
+                                        </a>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">View profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Team Sales Asia</a>
+                                </td>
+                                <td class="table-custom-col-02">jörgen.vogel@gmail.com</td>
+                                <td class="table-custom-col-03">12</td>
+                                <td class="table-custom-col-04">
+                                    <div class="dropdown-custom">
+                                        <a href="#" class="dropdown-custom-trigger">
+                                            <i class="icon-ellipsis"></i>
+                                        </a>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">View profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+    <script src="../public/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Give Feedback</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link">
+                            <!-- <img src="../public/svg/sidenav-logo.svg" alt="logo"> -->
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../people-average-charts/" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-user"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar-main-item active">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../teams-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <a href="../create-new-team/index.html">
+                        <i class="icon-plus-circle"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="#" class="sidebar-menu-footer-create-new">Compare teams</a>
+                    <a href="#" class="button button-mobile">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left text-truncate">
+                        <h1 class="header-top-left-title text-truncate">Give feedback</h1>
+                        <p class="header-top-left-small text-truncate">
+                            We make great ads, campaigns and create a super brand.
+                        </p>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+    
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+                                
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a 
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Join team</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Give rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+    
+                        <div class="dropdown-custom user-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html" class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html" class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="../sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <main class="give-feedback">
+
+                <div class="give-feedback-people">
+                    <div class="give-feedback-people-header">
+                        <img src="../public/img/cupsx2.png" alt="Clipart of mugs">
+                        <h2 class="text-truncate">Hey Max, welcome to give feedback<span class="text-truncate">Please select a person below.</span></h2>
+                    </div>
+                    <div class="input-container">
+                        <i class="icon-user-outline"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="give-feedback-people-body" data-toggle="modal" data-target="#feedbackModal">
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-05.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-07.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-05.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-07.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-05.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-07.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Feedback Modal -->
+                <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../public/img/p-05.png" alt="User's profile picture">
+                            <h5 class="modal-title" id="feedbackModalLabel">Give feedback to
+                                <span class="name">Juulia Martinez</span>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="icon-close"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="rating attitude">
+                                <p>Attitude</p>
+                                <div class="stars">
+                                    <input type="radio" name="attitude" id="attitude1">
+                                    <label for="attitude1"></label>
+            
+                                    <input type="radio" name="attitude" id="attitude2">
+                                    <label for="attitude2"></label>
+            
+                                    <input type="radio" name="attitude" id="attitude3">
+                                    <label for="attitude3"></label>
+            
+                                    <input type="radio" name="attitude" id="attitude4">
+                                    <label for="attitude4"></label>
+            
+                                    <input type="radio" name="attitude" id="attitude5">
+                                    <label for="attitude5"></label>
+                                </div>
+                            </div>
+
+                            <div class="rating productivity">
+                                <p>Productivity</p>
+                                <div class="stars">
+                                    <input type="radio" name="productivity" id="productivity1">
+                                    <label for="productivity1"></label>
+            
+                                    <input type="radio" name="productivity" id="productivity2">
+                                    <label for="productivity2"></label>
+            
+                                    <input type="radio" name="productivity" id="productivity3">
+                                    <label for="productivity3"></label>
+            
+                                    <input type="radio" name="productivity" id="productivity4">
+                                    <label for="productivity4"></label>
+            
+                                    <input type="radio" name="productivity" id="productivity5">
+                                    <label for="productivity5"></label>
+                                </div>
+                            </div>
+
+                            <div class="rating teamworking">
+                                <p>Teamworking</p>
+                                <div class="stars">
+                                    <input type="radio" name="teamworking" id="teamworking1">
+                                    <label for="teamworking1"></label>
+            
+                                    <input type="radio" name="teamworking" id="teamworking2">
+                                    <label for="teamworking2"></label>
+            
+                                    <input type="radio" name="teamworking" id="teamworking3">
+                                    <label for="teamworking3"></label>
+            
+                                    <input type="radio" name="teamworking" id="teamworking4">
+                                    <label for="teamworking4"></label>
+            
+                                    <input type="radio" name="teamworking" id="teamworking5">
+                                    <label for="teamworking5"></label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <label for="improvement">Add an improvement idea</label>
+                                <input type="text" id="improvement" name="improvement" placeholder="Write here...">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="compliment">Add a compliment</label>
+                                <input type="text" id="compliment" name="compliment" placeholder="Write here...">
+                            </div>
+
+                            <a href="#" class="button button-primary">Send feedback</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+        <script src="../public/js/jquery-3.4.1.min.js"></script>
+        <script src="../public/js/bootstrap.bundle.js"></script>
+        <script src="../public/js/main.js"></script>
+</body>
+
+</html>
